@@ -275,7 +275,7 @@ Googleアカウントでログイン済みの人は、<u>[このリンクから]
 4. 出力されたドキュメントを確認し、必要に応じて2～4をループ
 ]
 
-<img width = "700" src = "img/rmd_flow.png">
+<img width = "700" src = "img/rmd_flow.PNG">
 
 [R Markdownチートシート](https://www.rstudio.com/wp-content/uploads/2016/11/Rmarkdown-cheatsheet-2.0_ja.pdf)より
 
@@ -283,7 +283,7 @@ Googleアカウントでログイン済みの人は、<u>[このリンクから]
 
 ### ドキュメント一覧
 
-<img width = "800" src = "img/whatisrmd3.png">
+<img width = "800" src = "img/whatisrmd3.PNG">
 
 [R Markdownチートシート](https://www.rstudio.com/wp-content/uploads/2016/11/Rmarkdown-cheatsheet-2.0_ja.pdf)より
 
@@ -339,7 +339,7 @@ class: inverse, middle, center
 
 - ヒューマンエラーや手間の低減
 
-<img width = "600" src = "img/whatisrmd2.png">
+<img width = "600" src = "img/whatisrmd2.PNG">
 [R Markdownチートシート](https://www.rstudio.com/wp-content/uploads/2016/11/Rmarkdown-cheatsheet-2.0_ja.pdf)より
 
   
@@ -353,7 +353,7 @@ class: inverse, middle, center
 
 ## R Markdownが<u>ないとき</u>
 
-<img width = "800" src = "img/kopipe.png">
+<img width = "800" src = "img/kopipe.PNG">
 
 数値や図表を**手作業で**レポートへ反映させる
 
@@ -428,7 +428,7 @@ class: inverse, middle, center
 
 特に**readthedown**や**robobook**テンプレートが便利。
 
-<img width = "500" src = "img/rmd_setup3.png">
+<img width = "500" src = "img/rmd_setup3.PNG">
 
 ---
 
@@ -456,7 +456,7 @@ readthedownテンプレートの場合（`rmdformats`パッケージ）
 
 .small[HTMLフォーマット]
 
-<img width = "1000" src = "img/practice1.png">
+<img width = "1000" src = "img/practice1.PNG">
 
 ---
 
@@ -493,7 +493,7 @@ output:
 ---
 ### YAMLヘッダ項目一覧
 
-<img width = "550" src = "img/yaml.png">
+<img width = "550" src = "img/yaml.PNG">
 
 多すぎるので全容は@kazutanの記事を参照<br>
 .very_small[[R Markdownのhtml_documentで指定できるyamlヘッダ項目について](https://qiita.com/kazutan/items/726e03dfcef1615ae999)]
@@ -560,7 +560,7 @@ hist(mtcars$mpg)
 
 ### チャンクオプション一覧
 
-<img width = "1000" src = "img/chunk_option.png">
+<img width = "1000" src = "img/chunk_option.PNG">
 
 [R Markdownチートシート](https://www.rstudio.com/wp-content/uploads/2016/11/Rmarkdown-cheatsheet-2.0_ja.pdf)より
 
@@ -577,7 +577,7 @@ hist(mtcars$mpg)
 
 **? Chunk options**を押すと、Webページが開いて詳細を確認可
 
-<img width = "550" src = "img/chunk_options_page.png">
+<img width = "550" src = "img/chunk_options_page.PNG">
 
 ---
 
@@ -693,7 +693,7 @@ TeXと同じ記法で数式を書ける
 
 ## 書きあがったらKnit（レンダリング）
 
-<img width = "700" src = "img/rendering.png">
+<img width = "700" src = "img/rendering.PNG">
 
 outputのフォーマットに応じて出力される
 
