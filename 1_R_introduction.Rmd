@@ -582,7 +582,7 @@ hist(mtcars$mpg)
 ---
 
 ### チャンク単位で実行可能
-<img width = "650" src = "img/each_chunk.png">
+<img width = "800" src = "img/each_chunk.png">
 
 ---
 
@@ -594,7 +594,7 @@ hist(mtcars$mpg)
 
 ## 見出し
 
-<img width = "550" src = "img/chunk_layers.png">
+<img width = "750" src = "img/chunk_layers.png">
 
 見出し（`#`の数で階層化可能）やチャンク名を付けると、<br>メニューが生成される
 
