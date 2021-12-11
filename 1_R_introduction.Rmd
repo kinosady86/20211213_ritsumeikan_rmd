@@ -73,13 +73,15 @@ style_mono_accent(
 
 1. R言語の基礎
 
-2. R Markdownによるレポーティングの利点
+2. R Markdownによるドキュメント生成の利点
 
-3. R Markdownによるレポーティングの手続き
+3. R Markdownによるドキュメント生成の手続き
 
-4. R Markdownの実習と質疑応答
+4. R Markdownによるドキュメント生成の実習
 
 5. 作成したドキュメントの共有
+  + Open Science Framework (OSF)
+  + GitHub
 
 ---
 
