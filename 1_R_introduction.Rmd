@@ -543,7 +543,7 @@ output:
 ---
 ```
 
-.small[注意：上記はreadthedownテンプレートを適用したドキュメントの場合なので、<br>プレーンテンプレートならば`rmdformats::readthedown:`は不要]
+.small[注意：上記はreadthedownテンプレートを適用したドキュメントの場合なので、<br>プレーンテンプレートなら`rmdformats::readthedown:`の部分を`html_document:`にすればよい]
 
 ---
 ### YAMLヘッダ項目一覧
@@ -762,11 +762,13 @@ outputのフォーマットに応じて出力される
 
 class: inverse, middle, center
 
-実習：好きなデータセットを用いて、HTMLドキュメントを書いてみよう
+実習①：[このHTMLドキュメント](https://kinosady86.github.io/20211213_ritsumeikan_rmd/practice.html)と同じものを作ってみよう。
+
+実習②：好きなデータセットを用いて、HTMLドキュメントを書いてみよう
 
 ---
 
-# データセットの選択
+# 実習②におけるデータセットの選択
 
 1. 自分が持っている実験／調査データ
 

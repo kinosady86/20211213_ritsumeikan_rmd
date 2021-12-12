@@ -1,0 +1,83 @@
+---
+title: "Practice"
+author: "自分の氏名"
+date: "本日の日付"
+output:
+  html_document:
+    md_extensions: -ascii_identifiers
+    toc: true
+    toc_depth: 3
+    toc_float: true
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = TRUE)
+```
+
+# はじめてのR Markdown
+
+## データセットの説明
+
+以下では、`mtcars`データセットを使って、R Markdownの練習をします。<br>　→　Rにプリインストールされている、車両性能に関するデータセット
+
+まず`head(mtcars, 5)`と入力して、`mtcars`データセットの**冒頭5行**を表示しましょう。
+
+```{r, head-mtcars, echo = TRUE}
+head(mtcars, 5)
+```
+
+<u>主要な変数</u>
+
+-   mpg
+
+    -   燃費
+
+-   wt
+
+    -   重量
+
+-   am
+
+    -   オートマ車(0)か、マニュアル車(1)か
+
+※他の変数の説明も知りたければ、コンソール上で`?mtcars`と入力してください。
+
+## 可視化
+
+`mtcars`データセット内の`wt`変数の、**ヒストグラム**を描きます。
+
+```{r hist-wt, echo = FALSE}
+hist(mtcars$wt)
+```
+
+次に`wt`と`mpg`を用いて、散布図を描きます。散布図を描くコードは、`plot(mtcars$wt, mtcars$disp)`です。
+
+```{r plot-wt-mpg, echo = FALSE}
+plot(mtcars$wt, mtcars$mpg)
+```
+
+もちろん以下のように、X軸とY軸の変数を入れ替えることもできますよ。
+
+```{r plot-mpg-wt, eval = FALSE}
+plot(mtcars$mpg, mtcars$wt)
+```
+
+## 要約統計量
+
+例えば、`wt`変数の平均値は`r mean(mtcars$wt)`で、標準偏差は`r sd(mtcars$wt)`ですね。
+
+`mpg`変数と、\`wt\`変数、それぞれについて、平均・中央値・標準偏差を表にまとめてみましょう。
+
+|     | 平均                    | 中央値                    | 標準偏差              |
+|:---:|:------------------------|:--------------------------|:----------------------|
+| mpg | `r mean(mtcars$mpg)`    | `r median(mtcars$mpg)`    | `r sd(mtcars$mpg)`    |
+| wt  | `r mean(mtcars$wt)`     | `r median(mtcars$wt)`     | `r sd(mtcars$wt)`     |
+
+# 振り返り
+
+上手くできましたか？　まだまだ機能はたくさんあるので、使いこなしてくださいね。
+
+![](https://2.bp.blogspot.com/-Fh9ignfXzoY/VYJcboG8aAI/AAAAAAAAuYo/K0gRAJt4OC4/s800/message_otsukaresamadesu.png)
+
+※上の画像は、以下のURLから取得可能です。<br>
+https://2.bp.blogspot.com/-Fh9ignfXzoY/VYJcboG8aAI/AAAAAAAAuYo/K0gRAJt4OC4/s800/message_otsukaresamadesu.png
