@@ -1,6 +1,6 @@
 ---
-title: "RMarkdownによるドキュメント生成と共有"
-subtitle: "1. R言語とRMarkdownの基礎"
+title: "R Markdownによるドキュメント生成と共有"
+subtitle: "1. R言語とR Markdownの基礎"
 author: "紀ノ定　保礼"
 date: "`r Sys.Date()`"
 output:
@@ -200,6 +200,21 @@ class: inverse, middle, center
 
 ---
 
+# おすすめ図書
+
+<img height = "500" src = https://gihyo.jp/assets/images/cover/2021/thumb/TH160_9784297121709.jpg>
+通称、「宇宙船本」
+
+---
+
+# おすすめ図書（もうええわ）
+
+<img height = "1000" src = https://gihyo.jp/assets/images/cover/2021/thumb/TH160_9784297121709.jpg>
+
+---
+
+
+
 # おすすめWeb資料（しかも無料で閲覧可）
 
 .pull-left[
@@ -250,20 +265,58 @@ Markdownには色々と種類があるが、<br>
 
 **PandocのMarkdown**記法の例
 
-<img width = "550" src = "img/pandocmd.png">
+.pull-left[
+<img height = "450" src = "img/pandocmd.png">
+]
+
+.pull-right[
 .small[[R Markdownチートシート](https://www.rstudio.com/wp-content/uploads/2016/11/Rmarkdown-cheatsheet-2.0_ja.pdf)より
+]
+
+.small[Markdownは、**軽量マークアップ言語**<br>
+　→　HTMLタグをごちゃごちゃ書かずとも、簡便的にドキュメントを作れる<br>
+　　 （もちろんHTMLタグを併用してもよい）
+]
 ]
 
 ---
 
-### Google Colaboratory上で練習
+_R Markdown_とは、<u>**Markdown**</u>の記法を用いて、  
+R上でドキュメントを生成するシステム
 
-Google Colaboratory（Python環境）を使うには、<u>[このリンクから](https://www.google.com/url?sa=t&rct=j&q=&esrc=s&source=web&cd=&cad=rja&uact=8&ved=2ahUKEwig9ueuwNj0AhX_hlYBHaXGARMQFnoECAMQAQ&url=https%3A%2F%2Fcolab.research.google.com%2Fnotebooks%2Fwelcome.ipynb%3Fhl%3Dja&usg=AOvVaw0qrT1c7i_vNFAUuRBp9c6M)</u>
+- .small[*ドキュメント構造*を記述する、~~重量~~軽量マークアップ言語]
 
-Googleアカウントでログイン済みの人は、<u>[このリンクから](https://colab.research.google.com/notebook#create=true&language=r)</u>R環境が使える<br>
-.too_small[ただしbase Rしか使えない]
+*********
 
-様々なパッケージがインストールされたR環境を使うには、一手間要るが、<u>[このリンク](https://htsuda.net/stats/colab.html)</u>を参照。
+.small[例えば上記の文章は、以下のような記法を使用]
+
+```r
+_R Markdown_とは、<u>**Markdown**</u>の記法を用いて、R上でドキュメントを  #←行末に半角スペース 2つ
+生成するシステム
+
+- ドキュメント構造を記述する、~~重量~~軽量マークアップ言語
+```
+
+.small[HTMLなら、記述量が増える]
+
+```r
+<i>R Markdown</i>とは、<u><b>Markdown</b></u>の記法を用いて、<br>
+R上でドキュメントを生成するシステム
+
+<ul><li>ドキュメント構造を記述する、<del>重量</del>軽量マークアップ言語</li></ul>
+```
+
+---
+
+### Google Colaboratory上で、Markdown記法の練習
+
+- Google Colaboratory（Python環境）を使うには、<u>[このリンクから](https://www.google.com/url?sa=t&rct=j&q=&esrc=s&source=web&cd=&cad=rja&uact=8&ved=2ahUKEwig9ueuwNj0AhX_hlYBHaXGARMQFnoECAMQAQ&url=https%3A%2F%2Fcolab.research.google.com%2Fnotebooks%2Fwelcome.ipynb%3Fhl%3Dja&usg=AOvVaw0qrT1c7i_vNFAUuRBp9c6M)</u>
+
+- Googleアカウントでログイン済みの人は、<u>[このリンクから](https://colab.research.google.com/notebook#create=true&language=r)</u>R環境が使える
+    + ただしbase Rしか使えないので注意
+    + 様々なパッケージがインストールされたR環境を使うには、
+        + 方法①：一手間要るが、<u>[このリンク](https://htsuda.net/stats/colab.html)</u>を参照。
+        + 方法②：冒頭のセルで`%load_ext rpy2.ipython`と記述し<br>実行しておき、Rコードを実行したい各セルの1行目に`%%R`と追記する
 
 
 ---
@@ -464,7 +517,7 @@ readthedownテンプレートの場合（`rmdformats`パッケージ）
 
 ## フロントマター（YAMLヘッド項目）
 
-<img width = "1000" src = "img/practice2.png">
+<img width = "800" src = "img/practice2.png">
 
 フロントマターに、ドキュメントのプロパティ情報や<br>.small[（例：日付、製作者）]、出力形式の設定を書く
 
@@ -474,14 +527,14 @@ readthedownテンプレートの場合（`rmdformats`パッケージ）
 
 ```yaml
 ---
-title: "Ritsumeikan_Rmd_20211213"
-subtitle: "hogehoge"
+title: "立命館大学「データサイエンス特別講義」"
+subtitle: "第1部：RとR Markdownの基礎"
 author: "Yasunori Kinosada"
 date: "`r Sys.Date()`" #自動で本日の日付を取得するなら、`r "\u0060r Sys.Date()\u0060"`
 output:
   rmdformats::readthedown:
     highlight: zenburn #コードシンタックスのハイライト方法
-    md_extensions: -ascii_identifiers #マルチバイト文字を用いる場合のおまじない
+    md_extensions: -ascii_identifiers #マルチバイト文字を含むドキュメントで目次（TOC）を用いる際のおまじない
     self_contained: true #jsやcss，画像データなどをhtmlファイルに埋め込む
     lightbox: true #画像をクリックしたらポップアウトさせる
     toc: true #メニュー（toc: table of contents）を設ける
@@ -490,7 +543,7 @@ output:
 ---
 ```
 
-もちろん他にもたくさんある
+.small[注意：上記はreadthedownテンプレートを適用したドキュメントの場合なので、<br>プレーンテンプレートならば`rmdformats::readthedown:`は不要]
 
 ---
 ### YAMLヘッダ項目一覧
@@ -710,3 +763,16 @@ outputのフォーマットに応じて出力される
 class: inverse, middle, center
 
 実習：好きなデータセットを用いて、HTMLドキュメントを書いてみよう
+
+---
+
+# データセットの選択
+
+1. 自分が持っている実験／調査データ
+
+2. Rパッケージが持っているサンプルデータ
+    + 例：`datasets::mtcars`、`ggplot2::diamonds`
+
+********************
+
+※ 後で、Web上にドキュメントを公開する実習を行うので、問題のないデータセットにしてください
