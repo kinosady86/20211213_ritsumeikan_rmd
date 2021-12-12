@@ -1,5 +1,5 @@
 ---
-title: "RMarkdownによるドキュメント生成と共有"
+title: "R Markdownによるドキュメント生成と共有"
 subtitle: "2. ドキュメントの共有"
 author: "紀ノ定　保礼"
 date: "`r Sys.Date()`"
@@ -121,11 +121,11 @@ class: inverse, middle, center
 
 ---
 
-# そもそも、Gitというバージョン管理システムがある
+## そもそも、Gitというバージョン管理システムがある
 
 R Markdownを使いさえすれば、ヒューマンエラーが解消される...<u>わけではない</u>
 
-<img height = "300" src = "img/file_version.png">
+<img height = "400" src = "img/file_version.png">
 どれがどう違うの...？
 
 ---
@@ -159,9 +159,14 @@ Gitによるバージョン管理の利点（更新の差分が分かる）
 
 この講義の主眼は**バージョン管理方法ではない**ので、説明を省略します。
 
-知りたい方は、以下の資料をご参照ください（初心者向け）。
+知りたい方は、以下の資料をの55ページ目以降をご参照ください（初心者向け）。
 
 [R Markdownによるドキュメント生成とバージョン管理入門](https://www.slideshare.net/nocchi_airport/r-markdown-111322653)
+
+```{r rmd-slide, echo = FALSE}
+knitr::include_url("https://www.slideshare.net/slideshow/embed_code/key/ifIG31dbS7Fbeu")
+```
+
 
 ---
 
