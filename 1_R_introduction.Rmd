@@ -124,7 +124,7 @@ plot(mtcars$mpg, mtcars$wt)
 以下の内容について、Wordを用いて、ショートレポートを書いてみましょう。<br>（分量は、A4 1枚以下でOK）
 
 - 使用するデータ
-  + [このリンクから](https://sistkanri-my.sharepoint.com/:f:/g/personal/kinosada_yasunori_sist_ac_jp/El7sVccNGhtIuDIPVHLKxRsB_YEVGiLHkVRrNOi7ptskwA?e=n6nh9Q)、**sample_dataset.csv**をダウンロードしてください
+  + `mtcars`データセット
   + レポート内容
      - 要約統計量から分かること
      - その他の統計的分析から分かること（任意）
@@ -150,7 +150,7 @@ class: inverse, middle, center
 以下の内容について、Wordを用いて、ショートレポートを書いてみましょう。<br>（分量は、A4 1枚以下でOK）
 
 - 使用するデータ
-  + [このリンクから](https://sistkanri-my.sharepoint.com/:f:/g/personal/kinosada_yasunori_sist_ac_jp/El7sVccNGhtIuDIPVHLKxRsB_YEVGiLHkVRrNOi7ptskwA?e=n6nh9Q)、**DS_dataset.csv**をダウンロードしてください
+  + `iris`データセット
   + レポート内容
      - 要約統計量から分かること
      - その他の統計的分析から分かること（任意）
