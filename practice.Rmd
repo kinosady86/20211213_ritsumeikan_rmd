@@ -50,7 +50,7 @@ head(mtcars, 5)
 hist(mtcars$wt)
 ```
 
-次に`wt`と`mpg`を用いて、散布図を描きます。散布図を描くコードは、`plot(mtcars$wt, mtcars$disp)`です。
+次に`wt`と`mpg`を用いて、散布図を描きます。散布図を描くコードは、`plot(mtcars$wt, mtcars$mpg)`です。
 
 ```{r plot-wt-mpg, echo = FALSE}
 plot(mtcars$wt, mtcars$mpg)
